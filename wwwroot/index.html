@@ -6,24 +6,20 @@
     <title>ஓம் முருகா சிட்பண்ட்ஸ்</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding-bottom: 120px;
             background: #eef2f3;
         }
-
-            body.login-active {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-                background: linear-gradient(135deg, #1e3c72, #2a5298);
-                overflow: hidden;
-            }
-
-        /* Login Box */
+        body.login-active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            overflow: hidden;
+        }
         #loginBox {
             max-width: 420px;
             width: 90%;
@@ -34,34 +30,24 @@
             color: #fff;
             text-align: center;
         }
-
-            #loginBox h2 {
-                margin-bottom: 30px;
-                font-size: 30px;
-                font-weight: 700;
-                text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-            }
-
-        .login-field {
-            position: relative;
-            margin-bottom: 25px;
+        #loginBox h2 {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
         }
-
-            .login-field input {
-                width: 100%;
-                padding: 10px 12px 10px 40px;
-                border-radius: 12px;
-                border: none;
-                font-size: 15px;
-                color: #fff;
-                background: rgba(255,255,255,0.1);
-                outline: none;
-            }
-
-                .login-field input::placeholder {
-                    color: rgba(255,255,255,0.7);
-                }
-
+        .login-field { position: relative; margin-bottom: 25px; }
+        .login-field input {
+            width: 100%;
+            padding: 10px 12px 10px 40px;
+            border-radius: 12px;
+            border: none;
+            font-size: 15px;
+            color: #fff;
+            background: rgba(255,255,255,0.1);
+            outline: none;
+        }
+        .login-field input::placeholder { color: rgba(255,255,255,0.7); }
         #loginBox button {
             width: 60%;
             height: 50px;
@@ -74,8 +60,6 @@
             cursor: pointer;
             margin-top: 15px;
         }
-
-        /* Topbar */
         .topbar {
             display: flex;
             justify-content: center;
@@ -87,21 +71,18 @@
             font-weight: bold;
             position: relative;
         }
-
-            .topbar button {
-                position: absolute;
-                right: 20px;
-                top: 50%;
-                transform: translateY(-50%);
-                background: #fff;
-                color: red;
-                border: none;
-                padding: 8px 12px;
-                border-radius: 8px;
-                cursor: pointer;
-            }
-
-        /* Admin Panel */
+        .topbar button {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            color: red;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
         .center-box {
             max-width: 350px;
             margin: 40px auto;
@@ -111,8 +92,6 @@
             box-shadow: 0 0 10px rgba(0,0,0,.2);
             text-align: center;
         }
-
-        /* Filters */
         .filter-container {
             display: flex;
             justify-content: center;
@@ -122,66 +101,22 @@
             margin-bottom: 15px;
             text-align: center;
         }
-
-            .filter-container input[type="date"] {
-                width: 130px;
-                text-align: center;
-            }
-
-        .filter-all {
-            background: #007bff;
-            color: white;
-        }
-
-        .filter-paid {
-            background: green;
-            color: white;
-        }
-
-        .filter-notpaid {
-            background: orange;
-            color: white;
-        }
-
-            .filter-all:hover, .filter-paid:hover, .filter-notpaid:hover {
-                opacity: 0.9;
-            }
-
-        .filter-btn-active {
-            transform: scale(1.1);
-            border: 2px solid black;
-        }
-
-        /* Table */
+        .filter-container input[type="date"] { width: 130px; text-align: center; }
+        .filter-all { background: #007bff; color: white; }
+        .filter-paid { background: green; color: white; }
+        .filter-notpaid { background: orange; color: white; }
+        .filter-all:hover, .filter-paid:hover, .filter-notpaid:hover { opacity: 0.9; }
+        .filter-btn-active { transform: scale(1.1); border: 2px solid black; }
         table {
             width: 95%;
             margin: 10px auto;
             border-collapse: collapse;
             background: #fff;
         }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background: #007bff;
-            color: white;
-        }
-
-        td.status-paid {
-            color: green;
-            font-weight: bold;
-        }
-
-        td.status-notpaid {
-            color: orange;
-            font-weight: bold;
-        }
-
-        /* Footer */
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        th { background: #007bff; color: white; }
+        td.status-paid { color: green; font-weight: bold; }
+        td.status-notpaid { color: orange; font-weight: bold; }
         .footer {
             background: #333;
             color: white;
@@ -192,217 +127,195 @@
             bottom: 0;
             width: 100%;
         }
-
-            .footer a {
-                color: #ffd700;
-                text-decoration: none;
-            }
-
-                .footer a:hover {
-                    text-decoration: underline;
-                }
+        .footer a { color: #ffd700; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body class="login-active">
 
-    <!-- Login -->
-    <div id="loginBox">
-        <h2>Access Your Account</h2>
-        <input id="username" placeholder="Username">
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="login()">Login</button>
+<div id="loginBox">
+    <h2>Access Your Account</h2>
+    <input id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
+
+<div id="app" style="display:none">
+    <div class="topbar">
+        ஓம் முருகா சிட்பண்ட்ஸ்
+        <span id="currentMonthYear"></span>
+        <button onclick="logout()">Logout</button>
     </div>
 
-    <!-- Main App -->
-    <div id="app" style="display:none">
-        <div class="topbar">
-            ஓம் முருகா சிட்பண்ட்ஸ்
-            <span id="currentMonthYear"></span>
-            <button onclick="logout()">Logout</button>
+    <div id="adminPanel" class="center-box">
+        <h3>Add New Member</h3>
+        <input id="mname" placeholder="Member Name">
+        <input id="mmobile" placeholder="Mobile Number">
+        <input type="date" id="mpaidDate">
+        <input type="number" id="mpaidAmt" placeholder="Paid Amount">
+        <div style="margin-top:8px;">
+            <button onclick="addOrUpdateMember()" id="memberFormBtn">Save</button>
+            <button onclick="clearForm()" id="cancelBtn">Cancel</button>
         </div>
-
-        <!-- Admin Panel -->
-        <div id="adminPanel" class="center-box">
-            <h3>Add New Member</h3>
-            <input id="mname" placeholder="Member Name">
-            <input id="mmobile" placeholder="Mobile Number">
-            <input type="date" id="mpaidDate">
-            <input type="number" id="mpaidAmt" placeholder="Paid Amount">
-            <div style="margin-top:8px;">
-                <button onclick="addOrUpdateMember()" id="memberFormBtn">Save</button>
-                <button onclick="clearForm()" id="cancelBtn">Cancel</button>
-            </div>
-            <input type="hidden" id="editIndex">
-            <input type="hidden" id="paymentKey">
-        </div>
-
-        <!-- Filters -->
-        <div class="filter-container">
-            <div class="dropdown">
-                <button>Research Period</button>
-                <div class="dropdown-content">
-                    <button onclick="setPeriod('thisMonth')">This Month Transaction</button>
-                    <button onclick="setPeriod('lastMonth')">Last Month Transaction</button>
-                </div>
-            </div>
-            <input type="date" id="firstDate" onchange="renderByDate()">
-            <input type="date" id="lastDate" onchange="renderByDate()">
-            <button class="filter-all" onclick="show('all')">All Members</button>
-            <button class="filter-paid" onclick="show('paid')">Paid Members</button>
-            <button class="filter-notpaid" onclick="show('notpaid')">Not Paid Members</button>
-        </div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Mobile</th>
-                    <th>Status</th>
-                    <th>Paid Date</th>
-                    <th>Amount</th>
-                    <th id="actCol">Actions</th>
-                </tr>
-            </thead>
-            <tbody id="tbl"></tbody>
-        </table>
-
-        <div class="footer">
-            © All rights reserved ® Karthick Solaimalai
-        </div>
+        <input type="hidden" id="editIndex">
+        <input type="hidden" id="paymentKey">
     </div>
 
-    <script>
-        const admin = { u: "admin", p: "Kavin#$123" };
-        const client = { u: "client", p: "Client@123" };
-        let user = null;
-        let members = [];
-        let filterMode = "all";
-        let period = null;
+    <div class="filter-container">
+        <div class="dropdown">
+            <button>Research Period</button>
+            <div class="dropdown-content">
+                <button onclick="setPeriod('thisMonth')">This Month Transaction</button>
+                <button onclick="setPeriod('lastMonth')">Last Month Transaction</button>
+            </div>
+        </div>
+        <input type="date" id="firstDate" onchange="renderByDate()">
+        <input type="date" id="lastDate" onchange="renderByDate()">
+        <button class="filter-all" onclick="show('all')">All Members</button>
+        <button class="filter-paid" onclick="show('paid')">Paid Members</button>
+        <button class="filter-notpaid" onclick="show('notpaid')">Not Paid Members</button>
+    </div>
 
-        // Update current month
-        function updateMonthYear() {
-            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-            const today = new Date();
-            document.getElementById("currentMonthYear").innerText = "Month: " + monthNames[today.getMonth()] + " " + today.getFullYear();
-        }
-        updateMonthYear();
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Status</th>
+                <th>Paid Date</th>
+                <th>Amount</th>
+                <th id="actCol">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tbl"></tbody>
+    </table>
 
-        // Login
-        function login() {
-            const u = document.getElementById("username").value.trim();
-            const p = document.getElementById("password").value.trim();
-            if (u === admin.u && p === admin.p) user = "admin";
-            else if (u === client.u && p === client.p) user = "client";
-            else return alert("Invalid login!");
-            document.body.classList.remove("login-active");
-            document.getElementById("loginBox").style.display = "none";
-            document.getElementById("app").style.display = "block";
-            if (user === "client") {
-                document.getElementById("adminPanel").style.display = "none";
-                document.getElementById("actCol").style.display = "none";
-            }
-            fetchMembers();
-        }
+    <div class="footer">
+        © All rights reserved ® Karthick Solaimalai
+    </div>
+</div>
 
-        // Logout
-        function logout() { location.reload(); }
+<script>
+const backendUrl = "https://mybackend.onrender.com"; // <-- Replace with your Render backend URL
 
-        // Fetch members
-        async function fetchMembers() {
-            try {
-                const res = await fetch('/api/Members');
-                members = await res.json();
-                renderByDate();
-            } catch (e) { console.error(e); alert("Cannot fetch members from server!"); }
-        }
+const admin = { u: "admin", p: "Kavin#$123" };
+const client = { u: "client", p: "Client@123" };
+let user = null;
+let members = [];
+let filterMode = "all";
+let period = null;
 
-        // Render table
-        function renderByDate() {
-            const firstDate = document.getElementById("firstDate").value;
-            const lastDate = document.getElementById("lastDate").value;
-            const tbl = document.getElementById("tbl");
-            tbl.innerHTML = "";
-            members.forEach((m, idx) => {
-                const paid = new Date(m.paidDate);
-                if (firstDate && new Date(firstDate) > paid) return;
-                if (lastDate && new Date(lastDate) < paid) return;
-                if (filterMode === "paid" && m.status !== "Paid") return;
-                if (filterMode === "notpaid" && m.status !== "Not Paid") return;
-                const tr = document.createElement("tr");
-                tr.innerHTML = `
-                <td>${m.name}</td>
-                <td>${m.mobile}</td>
-                <td class="${m.status === "Paid" ? "status-paid" : "status-notpaid"}">${m.status}</td>
-                <td>${isNaN(paid) ? "" : paid.toLocaleDateString()}</td>
-                <td>${m.amount}</td>
-                <td>${user === "admin" ? `<button onclick="editMember(${idx})">Edit</button>
-                <button onclick="deleteMember(${idx})">Delete</button>` : ""}</td>
-            `;
-                tbl.appendChild(tr);
-            });
-        }
+function updateMonthYear() {
+    const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const today = new Date();
+    document.getElementById("currentMonthYear").innerText = "Month: " + monthNames[today.getMonth()] + " " + today.getFullYear();
+}
+updateMonthYear();
 
-        // Filter buttons
-        function show(mode) { filterMode = mode; renderByDate(); }
+function login() {
+    const u = document.getElementById("username").value.trim();
+    const p = document.getElementById("password").value.trim();
+    if(u === admin.u && p === admin.p) user = "admin";
+    else if(u === client.u && p === client.p) user = "client";
+    else return alert("Invalid login!");
+    document.body.classList.remove("login-active");
+    document.getElementById("loginBox").style.display = "none";
+    document.getElementById("app").style.display = "block";
+    if(user === "client") {
+        document.getElementById("adminPanel").style.display = "none";
+        document.getElementById("actCol").style.display = "none";
+    }
+    fetchMembers();
+}
 
-        // Period buttons
-        function setPeriod(p) { period = p; /* implement filtering logic if needed */ renderByDate(); }
+function logout() { location.reload(); }
 
-        // Add/Update member
-        function addOrUpdateMember() {
-            const idx = document.getElementById("editIndex").value;
-            const member = {
-                name: document.getElementById("mname").value,
-                mobile: document.getElementById("mmobile").value,
-                paidDate: document.getElementById("mpaidDate").value,
-                amount: Number(document.getElementById("mpaidAmt").value),
-                status: "Paid"
-            };
-            // Call your backend API
-            saveMember(member, idx ? Number(idx) : -1);
-        }
+async function fetchMembers() {
+    try {
+        const res = await fetch(`${backendUrl}/api/Members`);
+        members = await res.json();
+        renderByDate();
+    } catch(e) { console.error(e); alert("Cannot fetch members from server!"); }
+}
 
-        // Clear form
-        function clearForm() {
-            document.getElementById("mname").value = "";
-            document.getElementById("mmobile").value = "";
-            document.getElementById("mpaidDate").value = "";
-            document.getElementById("mpaidAmt").value = "";
-            document.getElementById("editIndex").value = "";
-        }
+function renderByDate() {
+    const firstDate = document.getElementById("firstDate").value;
+    const lastDate = document.getElementById("lastDate").value;
+    const tbl = document.getElementById("tbl");
+    tbl.innerHTML = "";
+    members.forEach((m, idx) => {
+        const paid = new Date(m.paidDate);
+        if(firstDate && new Date(firstDate) > paid) return;
+        if(lastDate && new Date(lastDate) < paid) return;
+        if(filterMode === "paid" && m.status !== "Paid") return;
+        if(filterMode === "notpaid" && m.status !== "Not Paid") return;
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td>${m.name}</td>
+            <td>${m.mobile}</td>
+            <td class="${m.status==="Paid"?"status-paid":"status-notpaid"}">${m.status}</td>
+            <td>${isNaN(paid)?"" : paid.toLocaleDateString()}</td>
+            <td>${m.amount}</td>
+            <td>${user==="admin"?`<button onclick="editMember(${idx})">Edit</button>
+            <button onclick="deleteMember(${idx})">Delete</button>`:""}</td>
+        `;
+        tbl.appendChild(tr);
+    });
+}
 
-        // Edit / Delete functions
-        function editMember(idx) {
-            const m = members[idx];
-            document.getElementById("mname").value = m.name;
-            document.getElementById("mmobile").value = m.mobile;
-            document.getElementById("mpaidDate").value = m.paidDate.slice(0, 10);
-            document.getElementById("mpaidAmt").value = m.amount;
-            document.getElementById("editIndex").value = idx;
-        }
+function show(mode){ filterMode = mode; renderByDate(); }
+function setPeriod(p){ period = p; renderByDate(); }
 
-        function deleteMember(idx) {
-            if (!confirm("Delete this member?")) return;
-            const m = members[idx];
-            fetch(`/api/Members/${m.id}`, { method: 'DELETE' })
-                .then(res => { if (res.ok) fetchMembers(); else alert("Delete failed!"); });
-        }
+function addOrUpdateMember(){
+    const idx = document.getElementById("editIndex").value;
+    const member = {
+        name: document.getElementById("mname").value,
+        mobile: document.getElementById("mmobile").value,
+        paidDate: document.getElementById("mpaidDate").value,
+        amount: Number(document.getElementById("mpaidAmt").value),
+        status: "Paid"
+    };
+    saveMember(member, idx ? Number(idx) : -1);
+}
 
-        // Save member to backend
-        async function saveMember(member, idx) {
-            try {
-                const method = idx >= 0 ? 'PUT' : 'POST';
-                const url = idx >= 0 ? `/api/Members/${members[idx].id}` : '/api/Members';
-                const res = await fetch(url, {
-                    method,
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(member)
-                });
-                if (!res.ok) throw new Error(await res.text());
-                fetchMembers();
-                clearForm();
-            } catch (e) { console.error(e); alert("Error saving member!"); }
-        }
-    </script>
+function clearForm(){
+    document.getElementById("mname").value = "";
+    document.getElementById("mmobile").value = "";
+    document.getElementById("mpaidDate").value = "";
+    document.getElementById("mpaidAmt").value = "";
+    document.getElementById("editIndex").value = "";
+}
+
+function editMember(idx){
+    const m = members[idx];
+    document.getElementById("mname").value = m.name;
+    document.getElementById("mmobile").value = m.mobile;
+    document.getElementById("mpaidDate").value = m.paidDate.slice(0,10);
+    document.getElementById("mpaidAmt").value = m.amount;
+    document.getElementById("editIndex").value = idx;
+}
+
+function deleteMember(idx){
+    if(!confirm("Delete this member?")) return;
+    const m = members[idx];
+    fetch(`${backendUrl}/api/Members/${m.id}`, { method:'DELETE' })
+        .then(res => { if(res.ok) fetchMembers(); else alert("Delete failed!"); });
+}
+
+async function saveMember(member, idx){
+    try {
+        const method = idx >=0 ? 'PUT' : 'POST';
+        const url = idx >=0 ? `${backendUrl}/api/Members/${members[idx].id}` : `${backendUrl}/api/Members`;
+        const res = await fetch(url, {
+            method,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(member)
+        });
+        if(!res.ok) throw new Error(await res.text());
+        fetchMembers();
+        clearForm();
+    } catch(e) { console.error(e); alert("Error saving member!"); }
+}
+</script>
 </body>
 </html>
